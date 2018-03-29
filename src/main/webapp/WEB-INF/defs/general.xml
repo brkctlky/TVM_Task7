@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="common" template="/WEB-INF/layout/classic.jsp">
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+
+	<definition name="index" extends="common">
+		<put-attribute name="title" value="Sample Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+		<put-attribute name="current" value="index" />
+	</definition>
+	
+	<definition name="users" extends="common">
+		<put-attribute name="title" value="All Users" />
+		<put-attribute name="body" value="/WEB-INF/jsp/users.jsp" />
+		<put-attribute name="current" value="users" />
+	</definition>
+	
+	<definition name="user-register" extends="common">
+		<put-attribute name="title" value="Add User" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user-register.jsp" />
+		<put-attribute name="current" value="addUser" />
+	</definition>
+	
+	<definition name="user-delete" extends="common">
+		<put-attribute name="title" value="Delete User" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user-delete.jsp" />
+		<put-attribute name="current" value="delUser" />
+	</definition>
+	
+	<definition name="user-search" extends="common">
+		<put-attribute name="title" value="Find User" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user-search.jsp" />
+		<put-attribute name="current" value="findUser" />
+	</definition>
+	
+	<definition name="user-update" extends="common">
+		<put-attribute name="title" value="Update User" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user-update.jsp" />
+		<put-attribute name="current" value="updateUser" />
+	</definition>
+	
+	<definition name="user-update-infos" extends="common">
+		<put-attribute name="title" value="Update User" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user-update-infos.jsp" />
+		<put-attribute name="current" value="updateUser" />
+	</definition>
+</tiles-definitions>
